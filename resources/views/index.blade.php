@@ -106,9 +106,10 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <ul class="list-unstyled mb-0">
-                                        <li><a href="#!">Web Design</a></li>
-                                        <li><a href="#!">HTML</a></li>
-                                        <li><a href="#!">Freebies</a></li>
+                                        <!-- Loop to read the categories from the DB -->
+                                        @foreach($categories as $category)
+                                        <li><a href="#!">{{ $category }}</a></li>
+                                        @endforeach
                                     </ul>
                                 </div>
                                 <div class="col-sm-6">

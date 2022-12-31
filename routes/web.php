@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
@@ -30,8 +31,12 @@ use Illuminate\Support\Facades\Route;
 
 // For static views
 # Index view
-Route::view('/', 'index')->name('home');
+// Route::view('/', 'index')->name('home');
 # About view
 Route::view('about', 'about')->name('about');
 # Contact view
 Route::view('/contact', 'contact')->name('contact');
+
+// For dynamic views
+// Index view
+Route::get('/', [HomeController::class, 'index'])->name('home');

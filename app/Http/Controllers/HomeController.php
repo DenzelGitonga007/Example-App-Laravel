@@ -12,8 +12,10 @@ class HomeController extends Controller
     public function index () {
         // Fetch the categories record
         $categories = Category::all();
-        // Fetch the posts
-        $posts = Post::where('category_id', request('category_id'))
+        // Fetch the posts and display the categories upon request
+        $posts = Post::when(request('category_id'), function ($query) {
+            $query->where('category_id', request('category_id'));
+        })
         ->latest()
         ->get();
 

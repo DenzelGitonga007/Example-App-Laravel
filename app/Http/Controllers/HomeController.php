@@ -13,7 +13,9 @@ class HomeController extends Controller
         // Fetch the categories record
         $categories = Category::all();
         // Fetch the posts
-        $posts = Post::latest()->get();
+        $posts = Post::where('category_id', request('category_id'))
+        ->latest()
+        ->get();
 
         // Return the index view
         return view('index', compact('categories', 'posts'));

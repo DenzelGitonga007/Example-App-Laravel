@@ -19,3 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+// About us view
+Route::get('/about', function () {
+    return view('about');
+});

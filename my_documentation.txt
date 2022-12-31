@@ -1,0 +1,2 @@
+PS D:\xampp\htdocs\Denzel_Projects\Laravel_Projects> # creating the new project-- example_app
+PS D:\xampp\htdocs\Denzel_Projects\Laravel_Projects> laravel new example_app

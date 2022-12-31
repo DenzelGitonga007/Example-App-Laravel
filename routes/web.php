@@ -16,16 +16,22 @@ use Illuminate\Support\Facades\Route;
 
 // My routes
 // The index view
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+// // About view
+// Route::get('/about', function () {
+//     return view('about');
+// });
+// // Contact view
+// Route::get('/contact', function () {
+//     return view('contact');
+// });
 
-// About view
-Route::get('/about', function () {
-    return view('about');
-});
-
-// Contact view
-Route::get('/contact', function () {
-    return view('contact');
-});
+// For static views
+# Index view
+Route::view('/', 'index');
+# About view
+Route::view('about', 'about');
+# Contact view
+Route::view('/contact', 'contact');

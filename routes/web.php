@@ -14,10 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// My routes
+// The index view
 Route::get('/', function () {
-    return view('welcome');
-});
-// Adding another route
-Route::get('/second_page', function () {
-    return view('second_page');
+    return view('index');
 });

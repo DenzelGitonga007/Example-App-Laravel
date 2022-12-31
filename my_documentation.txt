@@ -1,2 +1,3 @@
 PS D:\xampp\htdocs\Denzel_Projects\Laravel_Projects> # creating the new project-- example_app
 PS D:\xampp\htdocs\Denzel_Projects\Laravel_Projects> laravel new example_app
+PS D:\xampp\htdocs\Denzel_Projects\Laravel_Projects\example_app> # Use the template from startbootstrap blog

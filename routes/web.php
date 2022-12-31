@@ -30,8 +30,8 @@ use Illuminate\Support\Facades\Route;
 
 // For static views
 # Index view
-Route::view('/', 'index');
+Route::view('/', 'index')->name('home');
 # About view
-Route::view('about', 'about');
+Route::view('about', 'about')->name('about');
 # Contact view
-Route::view('/contact', 'contact');
+Route::view('/contact', 'contact')->name('contact');

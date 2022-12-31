@@ -20,7 +20,12 @@ Route::get('/', function () {
     return view('index');
 });
 
-// About us view
+// About view
 Route::get('/about', function () {
     return view('about');
+});
+
+// Contact view
+Route::get('/contact', function () {
+    return view('contact');
 });

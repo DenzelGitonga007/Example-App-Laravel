@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
@@ -40,3 +41,6 @@ Route::view('/contact', 'contact')->name('contact');
 // For dynamic views
 // Index view
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+// url parameters when retrieving posts
+Route::get('posts/{postId}', [PostController::class, 'show']);

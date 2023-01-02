@@ -2,3 +2,4 @@ PS D:\xampp\htdocs\Denzel_Projects\Laravel_Projects> # creating the new project-
 PS D:\xampp\htdocs\Denzel_Projects\Laravel_Projects> laravel new example_app
 PS D:\xampp\htdocs\Denzel_Projects\Laravel_Projects\example_app> # Use the template from startbootstrap blog
 PS D:\xampp\htdocs\Denzel_Projects\Laravel_Projects\example_app> # Trying to get parameters on the url
+PS D:\xampp\htdocs\Denzel_Projects\Laravel_Projects\example_app> # The project is finished

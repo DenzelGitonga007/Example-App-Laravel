@@ -43,4 +43,4 @@ Route::view('/contact', 'contact')->name('contact');
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // url parameters when retrieving posts
-Route::get('posts/{postId}', [PostController::class, 'show']);
+Route::get('posts/{postId}', [PostController::class, 'show'])->name('posts.show');

@@ -14,7 +14,7 @@
             <div class="row">
                 <!-- Blog entries-->
                 <div class="col-lg-12">
-                    <p class="lead mb-0">{{ $post->post_title }}</p>
+                    <p class="lead mb-0">{{ $post->post_text }}</p>
                 </div>
             </div>
         </div>
